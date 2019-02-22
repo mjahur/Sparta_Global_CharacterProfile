@@ -1,0 +1,3 @@
+Mishu,23,Villain,file:///C:/Users/Tech-W96a/Engineering26/Week2/Day3/profile_homework/Sparta_Global_My_Responsive_Profile/images/favicon.png
+TunniTheCat,3,Superhero,file:///C:/Users/Tech-W96a/Engineering26/Week2/Day3/profile_homework/Sparta_Global_My_Responsive_Profile/images/favicon.png
+Mishu/r16/rSuperhero/r

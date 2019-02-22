@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label FontSize="18" Content="Name" HorizontalAlignment="Left" Margin="46,47,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="18" Content="Age" HorizontalAlignment="Left" Margin="46,86,0,0" VerticalAlignment="Top" Width="58"/>
+        <Image Name="image" HorizontalAlignment="Left" Height="204" Margin="495,62,0,0" VerticalAlignment="Top" Width="222"/>
+        <Button Content="Upload" HorizontalAlignment="Left" Height="27" Margin="553,304,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click"/>
+        <Label FontSize="18" Content="Profile Image" HorizontalAlignment="Left" Margin="553,23,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="18" Content="Type" HorizontalAlignment="Left" Margin="46,148,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="name" FontSize="18" HorizontalAlignment="Left" Height="34" Margin="140,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="306" TextChanged="TextBox_TextChanged"/>
+        <TextBox Name="age" FontSize="18" HorizontalAlignment="Left" Height="34" Margin="140,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" TextChanged="Age_TextChanged"/>
+        <Grid Margin="148,160,488.6,124">
+            <RadioButton Name="superhero" Content="Superhero" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="157" Checked="RadioButton_Checked"/>
+            <RadioButton Name="antihero" Content="Antihero" HorizontalAlignment="Left" Height="34" Margin="0,102,0,0" VerticalAlignment="Top" Width="157" Checked="RadioButton_Checked_1"/>
+            <RadioButton Name="sidekick" Content="Sidekick" HorizontalAlignment="Left" Height="34" Margin="0,68,0,0" VerticalAlignment="Top" Width="157" Checked="Sidekick_Checked"/>
+            <RadioButton Name="villain" Content="Villain" HorizontalAlignment="Left" Height="34" Margin="0,34,0,0" VerticalAlignment="Top" Width="157" Checked="Villain_Checked"/>
+
+        </Grid>
+        <Label FontSize="18" Content="years" HorizontalAlignment="Left" Height="30" Margin="325,90,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button Content="View Profile" HorizontalAlignment="Left" Height="27" Margin="434,368,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click_2"/>
+        <Button Content="Register" HorizontalAlignment="Left" Height="27" Margin="253,368,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

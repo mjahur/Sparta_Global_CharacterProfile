@@ -74,12 +74,32 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (np.Name != null && np.Age.ToString() != null && np.Type != null && np.Filepath != null)
+            if (np.Name != null && np.Age != 0 && np.Type != null && np.Filepath != null)
             {
+                np.storeProfile();
+                MessageBox.Show(np.Name + " " + np.Age.ToString() + " " + np.Type + " " + np.Filepath);
 
             }
-            np.storeProfile();
-            MessageBox.Show(np.Name + " " + np.Age.ToString() + " " + np.Type + " " + np.Filepath);
+            else
+            {
+                if(np.Name == null)
+                {
+                    MessageBox.Show("Missing name");
+                }
+                else if(np.Age == 0)
+                {
+                    MessageBox.Show("Missing age");
+                }
+                else if (np.Type == null)
+                {
+                    MessageBox.Show("Missing type");
+                }
+                else if (np.Filepath == null)
+                {
+                    MessageBox.Show("Missing image");
+                }
+            }
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
